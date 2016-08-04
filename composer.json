@@ -1,0 +1,13 @@
+{
+    "name": "weissheiten/coaching-gowiththeflowbasics",
+    "type": "typo3-flow-package",
+    "description": "Flow package to go along the 'Go with the Flow - Flow Basics by example' tutorial.",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Weissheiten\\Coaching\\GoWithTheFlowBasics": "Classes"
+        }
+    }
+}
