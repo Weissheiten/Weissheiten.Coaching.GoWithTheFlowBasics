@@ -39,6 +39,12 @@ class Voucher
     protected $requesttime;
 
     /**
+     * @ORM\ManyToOne(inversedBy="vouchers")
+     * @var Location
+     */
+    protected $location;
+
+    /**
      * @return string
      */
     public function getUsername()
@@ -104,5 +110,21 @@ class Voucher
     public function setRequesttime(\DateTime $date)
     {
         $this->requesttime = $date;
+    }
+
+    /**
+     * @return Location
+     */
+    public function getLocation()
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param Location $location
+     */
+    public function setLocation($location)
+    {
+        $this->location = $location;
     }
 }

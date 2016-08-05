@@ -6,11 +6,19 @@ namespace Weissheiten\Coaching\GoWithTheFlowBasics\Command;
  */
 
 use TYPO3\Flow\Annotations as Flow;
+use Weissheiten\Coaching\GoWithTheFlowBasics\Domain\Model\Voucher;
+use Weissheiten\Coaching\GoWithTheFlowBasics\Domain\Repository;
 
 /**
  * @Flow\Scope("singleton")
  */
 class WifiVoucherCommandController extends \TYPO3\Flow\Cli\CommandController{
+
+    /**
+     * @Flow\Inject
+     * @var Repository\VoucherRepository
+     */
+    protected $voucherRepository;
 
     /**
      * WiFi Code creation via command line
@@ -23,5 +31,11 @@ class WifiVoucherCommandController extends \TYPO3\Flow\Cli\CommandController{
      */
     public function insertCommand($username, $password){
         $this->outputLine("Username: $username, Password: $password");
+
+        $voucher = new Voucher();
+        $voucher->setUsername('demo');
+        $voucher->setPassword('1234567');
+
+        $this->voucherRepository->add($voucher);
     }
 }

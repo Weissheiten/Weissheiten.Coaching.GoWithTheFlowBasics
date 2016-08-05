@@ -19,3 +19,10 @@ More information can be found at
 * https://docs.readthedocs.org/en/latest/getting_started.html#in-rst
 * https://www.skilldisplay.at/
 * http://www.weissheiten.at/
+
+Versions
+---------
+Version     Videos      Content
+0.1         00 to 05    Initial package with readme
+0.2         06          introduce first draft of command controller for inserting Wifi vouchers
+0.3         07          introduce voucher model
