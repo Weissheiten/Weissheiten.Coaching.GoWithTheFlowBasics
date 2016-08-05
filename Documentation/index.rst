@@ -25,4 +25,6 @@ Versions
 Version     Videos      Content
 0.1         00 to 05    Initial package with readme
 0.2         06          introduce first draft of command controller for inserting Wifi vouchers
-0.3         07          introduce voucher model
+0.3         07 to 08    introduce voucher model
+0.4         09          introduce repository, inject repository in commandcontroller, generate migration for database
+0.5         10          mark repository as singleton, introduce new commandcontroller functions for voucher administration

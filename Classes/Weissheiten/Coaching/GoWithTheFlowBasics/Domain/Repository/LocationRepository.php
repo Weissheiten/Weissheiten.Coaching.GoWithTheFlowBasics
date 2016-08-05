@@ -8,7 +8,10 @@ namespace Weissheiten\Coaching\GoWithTheFlowBasics\Domain\Repository;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Persistence\Repository;
 
-class LocationRepository
+/**
+ * @Flow\Scope("singleton")
+ */
+class LocationRepository extends Repository
 {
 
 }
