@@ -11,7 +11,7 @@ They can be queried one at a time to be printed in a local outlet via a dektop a
 so guests can be provided with an access code on demand.
 
 This package covers a good amount of the "Flow Basics" SkillPackage provided on SkillDisplay, so you'll be able to track your own progress while following this tutorial via SkillUps! for the according package at https://www.skilldisplay.at!
-The "Flow Basics" SkillPackage was generated in cooperation with the Neos Evangelist Christian Müller (@daskitsunet)
+The "Flow Basics" SkillPackage was generated in cooperation with the Neos Evangelist Christian Müller (@daskitsunet), this tutorial was created by Florian Weiss (@WeissheitenWien)
 
 More information can be found at
 
@@ -28,3 +28,4 @@ Version     Videos      Content
 0.3         07 to 08    introduce voucher model
 0.4         09          introduce repository, inject repository in commandcontroller, generate migration for database
 0.5         10          mark repository as singleton, introduce new commandcontroller functions for voucher administration
+0.6         11 to 12    introduce ViewRendering as HTML and JSON
