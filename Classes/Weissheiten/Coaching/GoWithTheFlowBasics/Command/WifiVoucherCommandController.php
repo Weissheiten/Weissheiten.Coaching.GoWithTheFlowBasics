@@ -24,5 +24,4 @@ class WifiVoucherCommandController extends \TYPO3\Flow\Cli\CommandController{
     public function insertCommand($username, $password){
         $this->outputLine("Username: $username, Password: $password");
     }
-
 }
